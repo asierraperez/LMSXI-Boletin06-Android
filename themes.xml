@@ -1,3 +1,12 @@
+<!DOCTYPE resources [
+<!ELEMENT resources(style+)>
+<!ELEMENT style(name,parent,item*)>
+<!ATTLIST style name CDATA #REQUIRED>
+<!ATTLIST style parent CDATA #REQUIRED>
+<!ELEMENT item(name,tools:targetApi)>
+<!ATTLIST item name CDATA #REQUIRED>
+<!ATTLIST item tools:targetApi CDATA #REQUIRED>
+]>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Theme.Corrutinas" parent="Theme.MaterialComponents.DayNight.DarkActionBar">

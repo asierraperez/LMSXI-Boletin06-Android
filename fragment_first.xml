@@ -1,4 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE androidx.constraintlayout.widget.ConstraintLayout[
+<!ELEMENT androidx.constraintlayout.widget.ConstraintLayout(android:layout_width, 
+                                                            android:layout_height, 
+                                                            tools:context,
+                                                            TextView,
+                                                            Button)>
+<!ATTLIST androidx.constraintlayout.widget.ConstraintLayout android:layout_width CDATA #REQUIRED>
+<!ATTLIST androidx.constraintlayout.widget.ConstraintLayout android:layout_height CDATA #REQUIRED>
+<!ATTLIST androidx.constraintlayout.widget.ConstraintLayout tools:context CDATA #REQUIRED>
+<!ELEMENT TextView  (android:id,
+                    android:layout_width, 
+                    android:layout_height,
+                    android:text,
+                    app:layout_constraintBottom_toTopOf,
+                    app:layout_constraintEnd_toEndOf,
+                    app:layout_constraintStart_toStartOf,
+                    app:layout_constraintTop_toTopOf)>
+<!ATTLIST android:id tools:context CDATA #REQUIRED>
+<!ATTLIST android:layout_width tools:context CDATA #REQUIRED>
+<!ATTLIST android:text tools:context CDATA #REQUIRED>
+<!ATTLIST app:layout_constraintBottom_toTopOf tools:context CDATA #REQUIRED>
+<!ATTLIST app:layout_constraintEnd_toEndOf tools:context CDATA #REQUIRED>
+<!ATTLIST app:layout_constraintStart_toStartOf tools:context CDATA #REQUIRED>
+<!ATTLIST app:layout_constraintTop_toTopOf tools:context CDATA #REQUIRED>
+<!ELEMENT Button  (android:id,
+                    android:layout_width, 
+                    android:layout_height,
+                    android:text,
+                    app:layout_constraintBottom_toBottomOf,
+                    app:layout_constraintEnd_toEndOf,
+                    app:layout_constraintStart_toStartOf,
+                    app:layout_constraintTop_toBottomOf)>
+<!ATTLIST android:id tools:context CDATA #REQUIRED>
+<!ATTLIST android:layout_width tools:context CDATA #REQUIRED>
+<!ATTLIST android:text tools:context CDATA #REQUIRED>
+<!ATTLIST app:layout_constraintBottom_toBottomOf tools:context CDATA #REQUIRED>
+<!ATTLIST app:layout_constraintEnd_toEndOf tools:context CDATA #REQUIRED>
+<!ATTLIST app:layout_constraintStart_toStartOf tools:context CDATA #REQUIRED>
+<!ATTLIST app:layout_constraintTop_toBottomOf tools:context CDATA #REQUIRED>
+                    
+]>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
